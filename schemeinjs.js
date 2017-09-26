@@ -26,11 +26,20 @@ var read_from_tokens=function(tokens){
 		return;
 	}
 	else{
-		return token;
+		return atom(token);
 	}
-
-		
 }
+
+var atom=funtion(token){
+	if(isNaN(Number(token))){
+		return String(token);
+	}
+	else
+		return Number(token);
+}
+
+
+
 
 
 
